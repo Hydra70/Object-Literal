@@ -1,0 +1,17 @@
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <input type="text" id="user">
+    <script>
+      function silence() {
+        var x = document.getElementById("user").value;
+        document.getElementById("user").value = "";
+        document.getElementById("placeHere").innerHTML = "Login successful, welcome back " + x;
+      }
+    </script>
+    <button onclick="silence()">User Login</button>
+    <h1 id="placeHere"></h1>
+  </body>
+</html>
