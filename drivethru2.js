@@ -18,7 +18,7 @@ function randoBurger() {
   var randBun = Math.floor(Math.random()*hamburger.bun.length);
   var randMeat = Math.floor(Math.random()*hamburger.meat.length);
   var randVeg = Math.floor(Math.random()*hamburger.veg.length);
-  var randCheese = Math.floor(Math.floor()*hamburger.cheese.length);
+  var randCheese = Math.floor(Math.random()*hamburger.cheese.length);
   var askMayo = prompt("Do you want mayo? Y or N");
   askMayo.toLowerCase();
   if ((askMayo == "n") && (hamburger.mayo === true)) {
