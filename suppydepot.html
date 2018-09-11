@@ -1,0 +1,24 @@
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <input type="text" id="quantity">
+    <script>
+      var ammunition = {
+        ammoType: "5.56 NATO",
+        projectile: "Tracer",
+        price: 21.54,
+        ounces: 8
+      }
+      function resupply() {
+        var qty = document.getElementById("quantity").value;
+        document.getElementById("quantity").value = "";
+        var total = ((qty * ammunition.price) * 4.712).toFixed(2);
+        document.getElementById("placeHere").innerHTML = "Resupply cost is $" + total;
+      }
+    </script>
+    <button onclick="resupply()">Resupply</button>
+    <h1 id="placeHere"></h1>
+  </body>
+</html>
